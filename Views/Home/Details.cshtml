@@ -1,0 +1,85 @@
+﻿@model HatsAplpication.Models.HatsDetails
+
+<div>
+    <h4>HatsDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            <img src="@Model.hat.ImgURL" width="250" height="250" />
+        </dd>
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.hat.Brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hat.Brand)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.hat.Price)
+        </dt>
+
+        <dd>
+            $@Html.DisplayFor(model => model.hat.Price)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.hat.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hat.Name)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.hat.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.hat.Gender)
+        </dd>
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.Material)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Material)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt style="background-color:lightgray">
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+    </dl>
+</div>
+<button>
+    @Html.ActionLink("Back to List", "Index")
+</button>
+
